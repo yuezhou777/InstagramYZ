@@ -1,0 +1,7 @@
+<h1>Edit Post</h1>
+
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}  <!--for security-->
+    {{ form.as_p }}  <!--treat each element in form(models.py) as a paragraph-->
+    <button type="submit">Update</button>
+</form>  
